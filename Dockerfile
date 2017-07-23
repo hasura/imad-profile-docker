@@ -9,3 +9,5 @@ COPY app/conf/nginx.conf /etc/nginx
 ADD app /app/
 CMD ["/app/getProfile.sh"] 
 COPY app/src/ /usr/share/nginx/html
+
+CMD ["nginx","-g","daemon off;"]
