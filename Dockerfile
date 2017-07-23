@@ -6,5 +6,6 @@ COPY app/conf/nginx.conf /etc/nginx
 #Copy the static files to be served
 
 # Put Users env var in index as content
-COPY ${USER_PROFILE} app/src/index.html
+ADD app /app/
+CMD ["/app/getProfile.sh"] 
 COPY app/src/ /usr/share/nginx/html
