@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [[ -z "$USER_PROFILE" ]]; then
-    echo "Oops"
+if [[ -z "$INDEX_HTML" ]]; then
+    echo "No edits made so far."
 else
-    echo $USER_PROFILE > "src/index.html"
+    echo $INDEX_HTML > "src/index.html"
 fi
