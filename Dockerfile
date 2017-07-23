@@ -7,7 +7,7 @@ COPY app/conf/nginx.conf /etc/nginx
 
 # Put Users env var in index as content
 ADD app /app/
-CMD ["/app/getProfile.sh"] 
 COPY app/src/ /usr/share/nginx/html
+CMD ["/app/getProfile.sh"] 
 
 CMD ["nginx","-g","daemon off;"]
