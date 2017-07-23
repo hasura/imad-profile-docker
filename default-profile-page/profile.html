@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IMAD Profile</title>
+    <style>
+      body{
+        background-color: grey;
+      }
+
+      #name{
+        border-left: 6px solid red;
+        background-color: white;
+      }
+      #dob{
+        border-left: 6px solid red;
+        background-color: white;
+      }
+      #gender{
+        border-left: 6px solid red;
+        background-color: white;
+      }
+      #university{
+        border-left: 6px solid red;
+        background-color: white;
+      }
+      #about_me{
+        border-left: 6px solid red;
+        background-color: white;
+      }
+      #about_me_content{
+        margin:inherit;
+        background-color: lightgrey
+      }
+      }
+    </style>
+  </head>
+  <body>
+
+    <script type = "text/javascript">
+        function preLoadFunc(){
+          var src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqzGi63O2ONRwKUGQz-eB2DHSMB3OYJ_ALD1-FuxodZndoZBnBA',
+              img = document.createElement('img');
+
+              img.src = src;
+              document.body.appendChild(img);
+        }
+        window.onpaint = preLoadFunc();
+
+    </script>
+
+    <div id = "name"><h2>Name: Tom Dick Harry</h2></div>
+    <div id = "dob"><h2>Date of Birth: 24th December, 1994</h2></div>
+    <div id = "gender"><h2>Gender: Male</h2></div>
+    <div id = "university"><h2>College: Indra University</h2></div>
+    <div id = "about_me"><h2>About me:</h2>
+    <div id = "about_me_content"><h3 align = "center"><i>&nbsp;&nbsp;Hello. I am Tom, son of Dick of house Harry. I am excited about technology and wish to become a full time developer. Making the computer work for me has been my passion since childhood. IMAD will help me get pro.</i></h3></div>
+    </div>
+
+
+    <div class="btn-group">
+      <button id="edit_pro">Edit Profile</button>
+      <button id="share_pro">Share</button>
+
+  </div>
+</html>
