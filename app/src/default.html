@@ -1,89 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>IMAD Profile</title>
+  <title>My IMAD profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;}
-    }
-  </style>
+  <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
+  <div class="container text-center full-height">
+    <div class="row content">
+      <div class="col-sm-4 sidenav">
+        <div class="thumbnail">
+          <!-- Change the link in the src attribute below to an image available on the Internet -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Placeholder_no_text.svg/1024px-Placeholder_no_text.svg.png" alt="Lights" style="width:100%" />
+        </div>
+        <h2 align="center"><b>Name</b></h2>
+        <p align="center">Profession,<br>Organisation,<br>Place.</p>
+      </div>
 
-
-
-<div class="container-fluid text-center">
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <div class="thumbnail">
-      <a href="http://facefacts.scot/images/people/ben_jones">
-        <img src="http://facefacts.scot/images/people/ben_jones" alt="Lights" style="width:100%">
-      </a>
-    </div>
-    <h2 align = "center"><b>Tom Hardy</b></h2>
-    <p align = "center">Computer Science,<br>Indra University,<br>Mumbai.</p>
-
-    </div>
-    <div class="col-sm-8 text-left">
-
-
-      <hr>
-      <h3>About me</h3>
-      <p>Hi I am Tom. I am 23. And this is about me.And this is about me.And this is about me.And this is about me. And this is about me. And this is about me. And this is about me. And this is about me. And this is about me. And this is about me.</p>
-      <hr>
-      <h3>Interests</h3>
-      <p>Web development, data science, probability, physics, astrology .............</p>
-      <hr>
-      <h3>Hobbies</h3>
-      <p>Cricket, Piano, Reading</p>
-      <hr>
-      <h3>Achievements</h3>
-      <p>Codemaster, Cricket champion ............</p>
-      <hr>
-
-    </div>
-    <div class="col-sm-2 sidenav">
-      <p><a href="www.facebook.com">Link to Profile</a></p>
+      <div class="col-sm-8 text-left">
+        <h3>About me</h3>
+        <p>A few lines about me.</p>
+        <hr>
+        <h3>Education</h3>
+        <p>My educational background</p>
+        <hr>
+        <h3>Experience</h3>
+        <p>My professional experience</p>
+        <hr>
+        <h3>A cool thing I've done recently</h3>
+        <p>Adopt a dog? Skydiving? Ate 10 dosas?<p>
+        <hr>
+      </div>
     </div>
   </div>
-</div>
 
-<footer class="container-fluid text-center">
-  <p>Life isn't about finding yourself. Life is about CREATING yourself.</p>
-</footer>
-
+  <footer class="container-fluid text-center footer">
+    A little quote I like.
+  </footer>
 </body>
 </html>
